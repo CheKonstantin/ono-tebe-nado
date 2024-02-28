@@ -35,7 +35,7 @@
   letter-spacing: 28px;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(1) span {
+.project1-promo .project1-promo__title-item:nth-child(1) > span {
   margin-left: 35px;
 }
 .project1-promo .project1-promo__title-item:nth-child(2) {
@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(2) span {
+.project1-promo .project1-promo__title-item:nth-child(2) > span {
   margin-left: 26px;
 }
 
@@ -55,7 +55,7 @@
   text-align: end;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(3) span {
+.project1-promo .project1-promo__title-item:nth-child(3) > span {
   margin-left: 36px;
 }
 
@@ -122,16 +122,13 @@
 }
 
 .project1-lots .project1-lots__card-title {
-  flex-grow: 1;
-}
-
-.project1-lots .project1-lots__card-title {
   color: var(--color-white);
   font-weight: bold;
   font-size: 22px;
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .project1-lots .project1-lots__card-text {

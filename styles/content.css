@@ -179,7 +179,6 @@
 }
 
 .project1-about .project1-about__descr {
-  max-width: 688px;
   padding-top: 100px;
 }
 
@@ -192,4 +191,11 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 24px;
+  max-width: 688px;
+}
+
+.project1-about .project1-about__text:last-child {
+  margin-bottom: 0;
+  max-width: 693px;
 }

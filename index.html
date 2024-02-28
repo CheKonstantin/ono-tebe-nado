@@ -2,9 +2,304 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link
+      rel="stylesheet"
+      href="./fonts/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="project1-header">
+      <div class="container">
+        <div class="project1-header__wrapper">
+          <div class="project1-header__left">
+            <!-- nav-comp -->
+            <nav class="project1-nav">
+              <ul class="project1-nav__list">
+                <li class="project1-nav__item project1-nav__item--current">
+                  <a href="/">главная</a>
+                </li>
+                <li class="project1-nav__item">
+                  <a href="#lotsIhor">посмотреть лоты</a>
+                </li>
+                <li class="project1-nav__item">
+                  <a href="#aboutIhor">об аукционе</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- nav-comp -->
+
+            <a
+              href="/"
+              class="project1-header__logo"
+              ><img
+                src="./images/logo-black.svg"
+                alt="logo-header"
+            /></a>
+          </div>
+
+          <!-- address-comp -->
+
+            <address class="project1-addr">
+            <a
+              href="tel:+79995555555"
+              class="project1-addr__item project1-addr__item--tel"
+              >+9 999 555 5555</a
+            >
+            <br />
+            <a
+              href="mailto:info@sobaka.ge"
+              class="project1-addr__item project1-addr__item--mail"
+              >info@sobaka.ge</a
+            >
+            <br />
+            <div class="project1-addr__item project1-addr__item--place">
+              наб. Принсенграхт 263- 265, Амстердам
+            </div>
+          </address>
+
+          <!-- address-comp -->
+        </div>
+      </div>
+    </header>
+    <main class="project1-content">
+      <section class="project1-promo">
+        <div class="container">
+          <div class="project1-promo__overlay"></div>
+          <div class="project1-promo__wrapper">
+            <h1 class="project1-promo__title">
+              <div class="project1-promo__title-item">он<span>o</span></div>
+              <div class="project1-promo__title-item">теб<span>e</span></div>
+              <div class="project1-promo__title-item">н<span>адо</span></div>
+            </h1>
+
+            <div class="project1-promo__bottom">
+              <div class="project1-promo__bottom-words">
+                <div class="project1-promo__bottom-word">Аукцион</div>
+                <div class="project1-promo__bottom-word">вещей,</div>
+                <div class="project1-promo__bottom-word">в</div>
+                <div class="project1-promo__bottom-word">которые</div>
+                <div class="project1-promo__bottom-word">никто</div>
+                <div class="project1-promo__bottom-word">не</div>
+                <div class="project1-promo__bottom-word">верил</div>
+              </div>
+
+              <button class="project1-btn">Сделать ставку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="project1-lots"
+        id="lotsIhor"
+      >
+        <div class="container">
+          <h2 class="project1-title">Лоты</h2>
+
+          <div class="project1-lots__grid">
+            <a
+              href="#"
+              class="project1-lots__card"
+              style="
+                background: url('./images/card-lot-01.jpg') center center/cover
+                  no-repeat;
+              "
+            >
+              <div class="project1-lots__card-overlay"></div>
+              <div class="project1-lots__card-wrapper">
+                <h3 class="project1-lots__card-title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+
+                <p class="project1-lots__card-text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="project1-lots__card"
+              style="
+                background: url('./images/card-lot-02.jpg') center center/cover
+                  no-repeat;
+              "
+            >
+              <div class="project1-lots__card-overlay"></div>
+              <div class="project1-lots__card-wrapper">
+                <h3 class="project1-lots__card-title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+
+                <p class="project1-lots__card-text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="project1-lots__card"
+              style="
+                background: url('./images/card-lot-03.jpg') center center/cover
+                  no-repeat;
+              "
+            >
+              <div class="project1-lots__card-overlay"></div>
+              <div class="project1-lots__card-wrapper">
+                <h3 class="project1-lots__card-title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+
+                <p class="project1-lots__card-text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <a
+            href="#"
+            class="project1-lots__link"
+            >посмотреть больше</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="project1-about"
+        id="aboutIhor"
+      >
+        <div class="container">
+          <div class="project1-about__wrapper">
+            <a
+              href="/"
+              class="project1-about__logo"
+            >
+              <img
+                src="./images/logo-white.svg"
+                alt="logo"
+              />
+            </a>
+
+            <div class="project1-about__descr">
+              <h2 class="project1-title">Об аукционе</h2>
+              <p class="project1-about__text">
+                Здесь вы не встретите очередное пафосное собрание невероятно
+                дорогого антиквариата. Наши лоты вообще не должны были попасть
+                ни на один аукцион. Потому что кому нужен дневник
+                девочки-подростка или картина, которую может нарисовать даже
+                ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+              </p>
+              <p class="project1-about__text">
+                Слишком сложные или, наоборот, слишком простые. Опережающие своё
+                время. В пух и прах растерзанные критиками. Непринятые и
+                непонятые. Когда-то они казались просто неудачными. Но, несмотря
+                <br />
+                на критику, кажущуюся простоту или сложность, сейчас без этих
+                лотов невозможно представить современную культуру. Когда в эти
+                вещи не верил никто, продолжали верить их создатели. И сейчас
+                эти лоты стали культовыми.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="project1-footer">
+      <div class="container">
+        <div class="project1-footer__wrapper">
+          <!-- address-comp -->
+
+          <address class="project1-addr">
+            <a
+              href="tel:+79995555555"
+              class="project1-addr__item project1-addr__item--tel"
+              >+9 999 555 5555</a
+            >
+            <br />
+            <a
+              href="mailto:info@sobaka.ge"
+              class="project1-addr__item project1-addr__item--mail"
+              >info@sobaka.ge</a
+            >
+            <br />
+            <div class="project1-addr__item project1-addr__item--place">
+              наб. Принсенграхт 263- 265, Амстердам
+            </div>
+          </address>
+
+          <!-- address-comp -->
+
+          <!-- nav-comp -->
+          <nav class="project1-nav">
+            <ul class="project1-nav__list">
+              <li class="project1-nav__item project1-nav__item--current">
+                <a href="/">главная</a>
+              </li>
+              <li class="project1-nav__item">
+                <a href="#">посмотреть лоты</a>
+              </li>
+              <li class="project1-nav__item">
+                <a href="#">об аукционе</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- nav-comp -->
+
+          <div class="project1-footer__social">
+            <a
+              href="#"
+              class="project1-footer__social-item"
+              style="
+                background: url('./images/yt.svg') center center/contain
+                  no-repeat;
+              "
+            ></a>
+            <a
+              href="#"
+              class="project1-footer__social-item"
+              style="
+                background: url('./images/vk.svg') center center/contain
+                  no-repeat;
+              "
+            ></a>
+            <a
+              href="#"
+              class="project1-footer__social-item"
+              style="
+                background: url('./images/pinterest.svg') center center/contain
+                  no-repeat;
+              "
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+

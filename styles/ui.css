@@ -1,0 +1,88 @@
+/* btns */
+
+.project1-btn {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid var(--color-white);
+  min-height: 51px;
+  padding: 0 31px;
+  background: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project1-btn:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* title h2 */
+
+.project1-title {
+  color: var(--color-black);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+/* address */
+
+.project1-addr {
+  max-width: 237px;
+  font-style: normal;
+}
+
+.project1-addr__item {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  text-underline-offset: 3px;
+}
+
+.project1-addr__item.project1-addr__item--mail {
+  margin-bottom: 5px;
+}
+
+/* nav */
+
+.project1-nav .project1-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 34px;
+  padding-top: 6px;
+  list-style-type: none;
+}
+
+.project1-nav .project1-nav__item {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.project1-nav .project1-nav__item::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid var(--color-black);
+  left: -20px;
+  top: 8px;
+}
+
+.project1-nav .project1-nav__item:first-of-type::before {
+  display: none;
+}
+
+.project1-nav .project1-nav__item.project1-nav__item--current a {
+  text-decoration: none;
+}

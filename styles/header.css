@@ -1,0 +1,32 @@
+.project1-header {
+  padding: 92px 27px 97px;
+  color: var(--color-black);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-underline-offset: 3px;
+  background: var(--color-white);
+}
+
+.project1-header .project1-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+
+.project1-header .project1-header__left {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.project1-header .project1-header__logo {
+  width: 135px;
+  height: auto;
+}
+
+.project1-header .project1-header__logo img {
+  display: block;
+  object-fit: contain;
+}

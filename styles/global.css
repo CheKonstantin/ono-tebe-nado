@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 1100px;
   margin: 0 auto;
@@ -32,3 +36,8 @@ a {
 img {
   width: 100%;
 }
+
+.container {
+  padding: 0 24px;
+}
+

@@ -25,282 +25,295 @@
     />
   </head>
   <body>
-    <header class="project1-header">
-      <div class="container">
-        <div class="project1-header__wrapper">
-          <div class="project1-header__left">
-            <!-- nav-comp -->
-            <nav class="project1-nav">
-              <ul class="project1-nav__list">
-                <li class="project1-nav__item project1-nav__item--current">
-                  <a href="/">главная</a>
-                </li>
-                <li class="project1-nav__item">
-                  <a href="#lotsIhor">посмотреть лоты</a>
-                </li>
-                <li class="project1-nav__item">
-                  <a href="#aboutIhor">об аукционе</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- nav-comp -->
-
+    <header class="project-header">
+      <!-- nav-comp -->
+      <nav class="project-nav">
+        <ul class="project-nav__list">
+          <li class="project-nav__item">
             <a
+              class="project-nav__link project-nav__link--current"
               href="/"
-              class="project1-header__logo"
-              ><img
-                src="./images/logo-black.svg"
-                alt="logo-header"
-            /></a>
-          </div>
-
-          <!-- address-comp -->
-
-          <address class="project1-addr">
-            <a
-              href="tel:+79995555555"
-              class="project1-addr__item project1-addr__item--tel"
-              >+9 999 555 5555</a
+              >главная</a
             >
-            <br />
+          </li>
+          <li class="project-nav__item">
             <a
-              href="mailto:info@sobaka.ge"
-              class="project1-addr__item project1-addr__item--mail"
-              >info@sobaka.ge</a
+              class="project-nav__link"
+              href="#lotsIhor"
+              >посмотреть лоты</a
             >
-            <br />
-            <div class="project1-addr__item project1-addr__item--place">
-              наб. Принсенграхт 263- 265, Амстердам
-            </div>
-          </address>
+          </li>
+          <li class="project-nav__item">
+            <a
+              class="project-nav__link"
+              href="#aboutIhor"
+              >об аукционе</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- nav-comp -->
 
-          <!-- address-comp -->
-        </div>
-      </div>
+      <a
+        href="/"
+        class="project-header__logo"
+        ><img
+          src="./images/logo-black.svg"
+          alt="Логотип проекта Оно-тебе-надо в шапке"
+      /></a>
+
+      <!-- address-comp -->
+
+      <address class="project-addr">
+        <a
+          href="tel:+79995555555"
+          class="project-addr__item"
+          >+9 999 555 5555</a
+        >
+        <br />
+        <a
+          href="mailto:info@sobaka.ge"
+          class="project-addr__item"
+          >info@sobaka.ge</a
+        >
+        <br />
+        <p class="project-addr__item-text">
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
+      </address>
+
+      <!-- address-comp -->
     </header>
-    <main class="project1-content">
-      <section class="project1-promo">
-        <div class="container">
-          <div class="project1-promo__overlay"></div>
-          <div class="project1-promo__wrapper">
-            <h1 class="project1-promo__title">
-              <span class="project1-promo__title-item">он<span>o</span></span>
-              <span class="project1-promo__title-item">теб<span>e</span></span>
-              <span class="project1-promo__title-item">н<span>адо</span></span>
-            </h1>
+    <main class="project-content">
+      <section class="project-promo">
+        <div class="project-overlay"></div>
 
-            <div class="project1-promo__bottom">
-              <div class="project1-promo__bottom-words">
-                <div class="project1-promo__bottom-word">Аукцион</div>
-                <div class="project1-promo__bottom-word">вещей,</div>
-                <div class="project1-promo__bottom-word">в</div>
-                <div class="project1-promo__bottom-word">которые</div>
-                <div class="project1-promo__bottom-word">никто</div>
-                <div class="project1-promo__bottom-word">не</div>
-                <div class="project1-promo__bottom-word">верил</div>
-              </div>
+        <h1 class="project-promo__title">
+          <span class="project-promo__title-item"
+            >о <span class="inner-span">но</span></span
+          >
+          <span class="project-promo__title-item"
+            >те<span class="inner-span">бe</span></span
+          >
+          <span class="project-promo__title-item"
+            >н <span class="inner-span">ад</span><span>о</span></span
+          >
+        </h1>
 
-              <button class="project1-btn">Сделать ставку</button>
-            </div>
+        <div class="project-promo__bottom">
+          <div class="project-promo__bottom-words">
+            <div class="project-promo__bottom-word">Аукцион</div>
+            <div class="project-promo__bottom-word">вещей,</div>
+            <div class="project-promo__bottom-word">в</div>
+            <div class="project-promo__bottom-word">которые</div>
+            <div class="project-promo__bottom-word">никто</div>
+            <div class="project-promo__bottom-word">не</div>
+            <div class="project-promo__bottom-word">верил</div>
           </div>
+
+          <button class="project-btn">Сделать ставку</button>
         </div>
       </section>
 
       <section
-        class="project1-lots"
+        class="project-lots"
         id="lotsIhor"
       >
-        <div class="container">
-          <h2 class="project1-title">Лоты</h2>
+        <h2 class="project-title">Лоты</h2>
 
-          <div class="project1-lots__grid">
-            <a
-              href="#"
-              class="project1-lots__card"
-              style="
-                background: url('./images/card-lot-01.jpg') center center/cover
-                  no-repeat;
-              "
-            >
-              <div class="project1-lots__card-overlay"></div>
-              <div class="project1-lots__card-wrapper">
-                <h3 class="project1-lots__card-title">
-                  Фильм режиссёра, который бросил киношколу
-                </h3>
+        <div class="project-lots__grid">
+          <a
+            href="#"
+            class="project-lots__card"
+            style="
+              background: url('./images/card-lot-01.jpg') center center/cover
+                no-repeat;
+            "
+          >
+            <div class="project-overlay"></div>
+            <div class="project-lots__card-wrapper">
+              <h3 class="project-lots__card-title">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
 
-                <p class="project1-lots__card-text">
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              class="project1-lots__card"
-              style="
-                background: url('./images/card-lot-02.jpg') center center/cover
-                  no-repeat;
-              "
-            >
-              <div class="project1-lots__card-overlay"></div>
-              <div class="project1-lots__card-wrapper">
-                <h3 class="project1-lots__card-title">
-                  Книга, где описан один скучный день из жизни рекламного агента
-                </h3>
-
-                <p class="project1-lots__card-text">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
-                </p>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              class="project1-lots__card"
-              style="
-                background: url('./images/card-lot-03.jpg') center center/cover
-                  no-repeat;
-              "
-            >
-              <div class="project1-lots__card-overlay"></div>
-              <div class="project1-lots__card-wrapper">
-                <h3 class="project1-lots__card-title">
-                  Картина, которую повторит даже 5-летний сын маминой подруги
-                </h3>
-
-                <p class="project1-lots__card-text">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
-                </p>
-              </div>
-            </a>
-          </div>
+              <p class="project-lots__card-text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </div>
+          </a>
 
           <a
             href="#"
-            class="project1-lots__link"
-            >посмотреть больше</a
+            class="project-lots__card"
+            style="
+              background: url('./images/card-lot-02.jpg') center center/cover
+                no-repeat;
+            "
           >
+            <div class="project-overlay"></div>
+            <div class="project-lots__card-wrapper">
+              <h3 class="project-lots__card-title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+
+              <p class="project-lots__card-text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="project-lots__card"
+            style="
+              background: url('./images/card-lot-03.jpg') center center/cover
+                no-repeat;
+            "
+          >
+            <div class="project-overlay"></div>
+            <div class="project-lots__card-wrapper">
+              <h3 class="project-lots__card-title">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+
+              <p class="project-lots__card-text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков... Сколько бы вы на такое поставили, если бы не знали,
+                что это — одна из революционных работ Кандинского?
+              </p>
+            </div>
+          </a>
         </div>
+
+        <a
+          href="#"
+          class="project-lots__link"
+          >посмотреть больше</a
+        >
       </section>
 
       <section
-        class="project1-about"
+        class="project-about"
         id="aboutIhor"
       >
-        <div class="container">
-          <div class="project1-about__wrapper">
-            <a
-              href="/"
-              class="project1-about__logo"
-            >
-              <img
-                src="./images/logo-white.svg"
-                alt="logo"
-              />
-            </a>
+        <div class="project-about__wrapper">
+          <a
+            href="/"
+            class="project-about__logo"
+          >
+            <img
+              class="project-about__logo-img"
+              src="./images/logo-white.svg"
+              alt="Логотип проекта Оно-тебе-надо в Об аукционе"
+            />
+          </a>
 
-            <div class="project1-about__descr">
-              <h2 class="project1-title">Об аукционе</h2>
-              <p class="project1-about__text">
-                Здесь вы не встретите очередное пафосное собрание невероятно
-                дорогого антиквариата. Наши лоты вообще не должны были попасть
-                ни на один аукцион. Потому что кому нужен дневник
-                девочки-подростка или картина, которую может нарисовать даже
-                ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-              </p>
-              <p class="project1-about__text">
-                Слишком сложные или, наоборот, слишком простые. Опережающие своё
-                время. В пух и прах растерзанные критиками. Непринятые и
-                непонятые. Когда-то они казались просто неудачными. Но, несмотря
-                <br />
-                на критику, кажущуюся простоту или сложность, сейчас без этих
-                лотов невозможно представить современную культуру. Когда в эти
-                вещи не верил никто, продолжали верить их создатели. И сейчас
-                эти лоты стали культовыми.
-              </p>
-            </div>
+          <div class="project-about__descr">
+            <h2 class="project-title">Об аукционе</h2>
+            <p class="project-about__text">
+              Здесь вы не встретите очередное пафосное собрание невероятно
+              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+              на один аукцион. Потому что кому нужен дневник девочки-подростка
+              или картина, которую может нарисовать даже ребёнок? Кому нужны все
+              эти странные вещи, созданные любителями?
+            </p>
+            <p class="project-about__text">
+              Слишком сложные или, наоборот, слишком простые. Опережающие своё
+              время. В пух и прах растерзанные критиками. Непринятые и
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              <br />
+              на критику, кажущуюся простоту или сложность, сейчас без этих
+              лотов невозможно представить современную культуру. Когда в эти
+              вещи не верил никто, продолжали верить их создатели. И сейчас эти
+              лоты стали культовыми.
+            </p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="project1-footer">
-      <div class="container">
-        <div class="project1-footer__wrapper">
-          <!-- address-comp -->
+    <footer class="project-footer">
+      <div class="project-footer__wrapper">
+        <!-- address-comp -->
 
-          <address class="project1-addr">
-            <a
-              href="tel:+79995555555"
-              class="project1-addr__item project1-addr__item--tel"
-              >+9 999 555 5555</a
-            >
-            <br />
-            <a
-              href="mailto:info@sobaka.ge"
-              class="project1-addr__item project1-addr__item--mail"
-              >info@sobaka.ge</a
-            >
-            <br />
-            <div class="project1-addr__item project1-addr__item--place">
-              наб. Принсенграхт 263- 265, Амстердам
-            </div>
-          </address>
+        <address class="project-addr">
+          <a
+            href="tel:+79995555555"
+            class="project-addr__item"
+            >+9 999 555 5555</a
+          >
+          <br />
+          <a
+            href="mailto:info@sobaka.ge"
+            class="project-addr__item"
+            >info@sobaka.ge</a
+          >
+          <br />
+          <p class="project-addr__item-text">
+            наб. Принсенграхт 263- 265, Амстердам
+          </p>
+        </address>
 
-          <!-- address-comp -->
+        <!-- address-comp -->
 
-          <!-- nav-comp -->
-          <nav class="project1-nav">
-            <ul class="project1-nav__list">
-              <li class="project1-nav__item project1-nav__item--current">
-                <a href="/">главная</a>
-              </li>
-              <li class="project1-nav__item">
-                <a href="#">посмотреть лоты</a>
-              </li>
-              <li class="project1-nav__item">
-                <a href="#">об аукционе</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- nav-comp -->
+        <!-- nav-comp -->
+        <nav class="project-nav">
+          <ul class="project-nav__list">
+            <li class="project-nav__item">
+              <a
+                class="project-nav__link project-nav__link--current"
+                href="/"
+                >главная</a
+              >
+            </li>
+            <li class="project-nav__item">
+              <a
+                class="project-nav__link"
+                href="#lotsIhor"
+                >посмотреть лоты</a
+              >
+            </li>
+            <li class="project-nav__item">
+              <a
+                class="project-nav__link"
+                href="#aboutIhor"
+                >об аукционе</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- nav-comp -->
 
-          <div class="project1-footer__social">
-            <a
-              href="#"
-              class="project1-footer__social-item"
-              style="
-                background: url('./images/yt.svg') center center/contain
-                  no-repeat;
-              "
-            ></a>
-            <a
-              href="#"
-              class="project1-footer__social-item"
-              style="
-                background: url('./images/vk.svg') center center/contain
-                  no-repeat;
-              "
-            ></a>
-            <a
-              href="#"
-              class="project1-footer__social-item"
-              style="
-                background: url('./images/pinterest.svg') center center/contain
-                  no-repeat;
-              "
-            ></a>
-          </div>
+        <div class="project-footer__social">
+          <a
+            href="#"
+            class="project-footer__social-item"
+            style="
+              background: url('./images/yt.svg') center center/contain no-repeat;
+            "
+          ></a>
+          <a
+            href="#"
+            class="project-footer__social-item"
+            style="
+              background: url('./images/vk.svg') center center/contain no-repeat;
+            "
+          ></a>
+          <a
+            href="#"
+            class="project-footer__social-item"
+            style="
+              background: url('./images/pinterest.svg') center center/contain
+                no-repeat;
+            "
+          ></a>
         </div>
       </div>
     </footer>

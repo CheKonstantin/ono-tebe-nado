@@ -1,79 +1,70 @@
 /* promo block */
 
-.project1-promo {
+.project-promo {
   position: relative;
-  padding: 165px 26px 51px;
+  padding: 165px 50px 51px;
   background: url('../images/cover.jpg') center center/cover no-repeat;
 }
 
-.project1-promo .project1-promo__overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.6;
-  background: var(--color-black);
-}
-
-.project1-promo .project1-promo__wrapper {
-  position: relative;
-  z-index: 1;
-}
-
-.project1-promo .project1-promo__title {
+.project-promo__title {
   display: flex;
   flex-direction: column;
-  margin-bottom: 128px;
+  margin-bottom: 135px;
   color: var(--color-white);
   font-weight: bold;
   font-size: 100px;
-  line-height: 115%;
+  line-height: 108%;
   text-transform: uppercase;
+  position: relative;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(1) {
-  margin-bottom: 12px;
+.project-promo__title-item {
+  margin-bottom: 20px;
+}
+
+.project-promo__title-item:nth-child(1) {
   letter-spacing: 28px;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(1) > span {
+.project-promo__title-item:nth-child(1) > span {
   margin-left: 35px;
 }
-.project1-promo .project1-promo__title-item:nth-child(2) {
-  margin-bottom: 5px;
-  margin-left: -26px;
-  letter-spacing: 32px;
+.project-promo__title-item:nth-child(2) {
+  letter-spacing: 30px;
   text-align: center;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(2) > span {
+.project-promo__title-item:nth-child(2) > span {
+  letter-spacing: 60px;
   margin-left: 26px;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(3) {
-  margin-right: -24px;
-  letter-spacing: 27px;
+.project-promo__title-item:nth-child(3) {
+  letter-spacing: 60px;
   text-align: end;
+  margin-bottom: 0;
 }
 
-.project1-promo .project1-promo__title-item:nth-child(3) > span {
-  margin-left: 36px;
+.project-promo__title-item:nth-child(3) > span {
+  letter-spacing: 30px;
 }
 
-.project1-promo__bottom {
+.project-promo__bottom {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
 
-.project1-promo__bottom-words {
+.project-promo__bottom-words {
   display: flex;
   align-items: center;
   gap: 25px;
   padding-left: 26px;
 }
 
-.project1-promo .project1-promo__bottom-word {
+.project-promo__bottom-word {
   color: var(--color-white);
   font-weight: normal;
   font-size: 22px;
@@ -83,37 +74,28 @@
 
 /* lots block */
 
-.project1-lots {
-  padding-top: 179px;
+.project-lots {
+  padding: 179px 24px 0;
 }
 
-.project1-lots .project1-title {
+.project-lots .project-title {
   margin-bottom: 27px;
   padding-left: 40px;
 }
-
-.project1-lots .project1-lots__grid {
+.project-lots__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-.project1-lots .project1-lots__card {
+.project-lots__card {
   position: relative;
   margin-bottom: 30px;
   padding: 51px 40px 48px;
   text-decoration: none;
 }
 
-.project1-lots .project1-lots__card-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.6;
-  background: var(--color-black);
-}
-
-.project1-lots__card-wrapper {
+.project-lots__card-wrapper {
   position: relative;
   z-index: 1;
   display: flex;
@@ -121,7 +103,7 @@
   min-height: 100%;
 }
 
-.project1-lots .project1-lots__card-title {
+.project-lots__card-title {
   color: var(--color-white);
   font-weight: bold;
   font-size: 22px;
@@ -131,14 +113,14 @@
   flex-grow: 1;
 }
 
-.project1-lots .project1-lots__card-text {
+.project-lots__card-text {
   color: var(--color-white);
   font-weight: normal;
   font-size: 20px;
   line-height: 120%;
 }
 
-.project1-lots .project1-lots__link {
+.project-lots__link {
   padding-left: 40px;
   color: var(--color-black);
   font-weight: normal;
@@ -150,40 +132,40 @@
 
 /* about block */
 
-.project1-about {
-  padding-top: 182px;
+.project-about {
+  padding: 182px 24px 0;
 }
 
-.project1-about .project1-about__wrapper {
+.project-about__wrapper {
   display: flex;
   gap: 74px;
   padding-left: 45px;
 }
 
-.project1-about .project1-about__logo {
+.project-about__logo {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   min-width: 240px;
   height: 240px;
-  border-radius: 100%;
+  border-radius: 50%;
   background: var(--color-black);
 }
 
-.project1-about .project1-about__logo img {
+.project-about__logo-img {
   width: 147px;
   height: auto;
 }
 
-.project1-about .project1-about__descr {
+.project-about__descr {
   padding-top: 100px;
 }
 
-.project1-about .project1-title {
+.project-about .project-title {
   margin-bottom: 101px;
 }
 
-.project1-about .project1-about__text {
+.project-about__text {
   color: var(--color-black);
   font-weight: normal;
   font-size: 20px;
@@ -192,7 +174,7 @@
   max-width: 688px;
 }
 
-.project1-about .project1-about__text:last-child {
+.project-about__text:last-child {
   margin-bottom: 0;
   max-width: 693px;
 }

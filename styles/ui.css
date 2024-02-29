@@ -1,6 +1,7 @@
 /* btns */
 
-.project1-btn {
+.project-btn {
+  font-family: inherit;
   color: var(--color-white);
   font-size: 22px;
   font-weight: normal;
@@ -15,14 +16,14 @@
   cursor: pointer;
 }
 
-.project1-btn:hover {
+.project-btn:hover {
   background: var(--color-white);
   color: var(--color-black);
 }
 
 /* title h2 */
 
-.project1-title {
+.project-title {
   color: var(--color-black);
   font-size: 40px;
   font-weight: 700;
@@ -32,26 +33,22 @@
 
 /* address */
 
-.project1-addr {
+.project-addr {
   max-width: 237px;
   font-style: normal;
-}
-
-.project1-addr__item {
-  display: inline-block;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 24.3px;
   font-weight: normal;
   text-underline-offset: 3px;
 }
 
-.project1-addr__item.project1-addr__item--mail {
-  margin-bottom: 5px;
+.project-addr__item {
+  display: inline-block;
 }
 
 /* nav */
 
-.project1-nav .project1-nav__list {
+.project-nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,14 +57,14 @@
   list-style-type: none;
 }
 
-.project1-nav .project1-nav__item {
+.project-nav__item {
   position: relative;
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
 }
 
-.project1-nav .project1-nav__item::before {
+.project-nav__item::before {
   position: absolute;
   display: block;
   content: '';
@@ -79,10 +76,20 @@
   top: 8px;
 }
 
-.project1-nav .project1-nav__item:first-of-type::before {
+.project-nav__item:first-of-type::before {
   display: none;
 }
 
-.project1-nav .project1-nav__item.project1-nav__item--current a {
+.project-nav__link.project-nav__link--current {
   text-decoration: none;
+}
+
+/* overlay */
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.6;
+  background: var(--color-black);
 }

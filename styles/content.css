@@ -13,7 +13,7 @@
   color: var(--color-white);
   font-weight: bold;
   font-size: 100px;
-  line-height: 108%;
+
   text-transform: uppercase;
   position: relative;
 }
@@ -23,30 +23,30 @@
 }
 
 .project-promo__title-item:nth-child(1) {
-  letter-spacing: 28px;
+  line-height: 115%;
 }
 
-.project-promo__title-item:nth-child(1) > span {
-  margin-left: 35px;
-}
 .project-promo__title-item:nth-child(2) {
-  letter-spacing: 30px;
   text-align: center;
-}
-
-.project-promo__title-item:nth-child(2) > span {
-  letter-spacing: 60px;
-  margin-left: 26px;
+  line-height: 100%;
 }
 
 .project-promo__title-item:nth-child(3) {
-  letter-spacing: 60px;
   text-align: end;
   margin-bottom: 0;
+  line-height: 100%;
 }
 
-.project-promo__title-item:nth-child(3) > span {
+.project-promo__inner-span.project-promo__inner-span--ls-0 {
+  letter-spacing: 0;
+}
+
+.project-promo__inner-span.project-promo__inner-span--ls-30 {
   letter-spacing: 30px;
+}
+
+.project-promo__inner-span.project-promo__inner-span--ls-60 {
+  letter-spacing: 60px;
 }
 
 .project-promo__bottom {
@@ -57,19 +57,14 @@
   gap: 40px;
 }
 
-.project-promo__bottom-words {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  padding-left: 26px;
-}
-
-.project-promo__bottom-word {
+.project-promo__bottom-text {
   color: var(--color-white);
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-left: 26px;
+  word-spacing: 19px;
 }
 
 /* lots block */
@@ -86,20 +81,24 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  margin-bottom: 30px;
 }
 
 .project-lots__card {
   position: relative;
-  margin-bottom: 30px;
   padding: 51px 40px 48px;
   text-decoration: none;
-}
-
-.project-lots__card-wrapper {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+}
+
+.project-lots__card-img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
   min-height: 100%;
 }
 
@@ -111,6 +110,7 @@
   text-decoration-line: underline;
   text-transform: uppercase;
   flex-grow: 1;
+  position: relative;
 }
 
 .project-lots__card-text {
@@ -118,6 +118,11 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 120%;
+  position: relative;
+}
+
+.project-lots__card-link {
+  text-decoration: none;
 }
 
 .project-lots__link {
@@ -133,13 +138,9 @@
 /* about block */
 
 .project-about {
-  padding: 182px 24px 0;
-}
-
-.project-about__wrapper {
   display: flex;
   gap: 74px;
-  padding-left: 45px;
+  padding: 182px 26px 45px 70px;
 }
 
 .project-about__logo {

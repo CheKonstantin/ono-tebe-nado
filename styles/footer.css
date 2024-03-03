@@ -1,35 +1,35 @@
-.project-footer {
+.footer {
   padding: 130px 50px 89px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.project-footer .project-nav {
+.footer .nav {
   padding-top: 5px;
 }
 
-.project-footer .project-addr {
+.footer .addr {
   padding-top: 5px;
 }
 
-.project-footer .project-nav__list {
+.footer .nav__list {
   flex-direction: column;
   gap: 0;
   padding-top: 0;
 }
 
-.project-footer .project-nav__item::before {
+.footer .nav__item::before {
   display: none;
 }
-.project-footer__social {
+.footer__social {
   display: flex;
   align-items: center;
   gap: 48px;
   list-style-type: none;
 }
 
-.project-footer__social-item {
+.footer__social-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +39,6 @@
   transition: 0.3s ease-in-out;
 }
 
-.project-footer__social-item:hover {
+.footer__social-item:hover {
   box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.2);
 }

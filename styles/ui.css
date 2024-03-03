@@ -1,6 +1,6 @@
 /* btns */
 
-.project-btn {
+.btn {
   font-family: inherit;
   color: var(--color-white);
   font-size: 22px;
@@ -16,14 +16,14 @@
   cursor: pointer;
 }
 
-.project-btn:hover {
+.btn:hover {
   background: var(--color-white);
   color: var(--color-black);
 }
 
 /* title h2 */
 
-.project-title {
+.title {
   color: var(--color-black);
   font-size: 40px;
   font-weight: 700;
@@ -33,7 +33,7 @@
 
 /* address */
 
-.project-addr {
+.addr {
   max-width: 237px;
   font-style: normal;
   font-size: 18px;
@@ -42,13 +42,13 @@
   text-underline-offset: 3px;
 }
 
-.project-addr__item {
+.addr__item {
   display: inline-block;
 }
 
 /* nav */
 
-.project-nav__list {
+.nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,14 +57,14 @@
   list-style-type: none;
 }
 
-.project-nav__item {
+.nav__item {
   position: relative;
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
 }
 
-.project-nav__item::before {
+.nav__item::before {
   position: absolute;
   display: block;
   content: '';
@@ -76,17 +76,17 @@
   top: 8px;
 }
 
-.project-nav__item:first-of-type::before {
+.nav__item:first-of-type::before {
   display: none;
 }
 
-.project-nav__link.project-nav__link--current {
+.nav__link.nav__link--current {
   text-decoration: none;
 }
 
 /* overlay */
 
-.project-overlay {
+.overlay {
   position: absolute;
   inset: 0;
   z-index: 0;
